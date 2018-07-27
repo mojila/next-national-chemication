@@ -67,33 +67,59 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
+<<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 2);
+=======
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+>>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 /******/ })
 /************************************************************************/
 /******/ ({
 
+<<<<<<< HEAD
 /***/ "./node_modules/next/dist/pages/_error.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("next/error")
+=======
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(15);
+>>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/next/dist/pages/_error.js");
+=======
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(16)
+>>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "next/error":
+=======
+/***/ 16:
+>>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 /***/ (function(module, exports) {
 
 module.exports = require("next/error");
 
 /***/ })
 
+<<<<<<< HEAD
 /******/ });
 //# sourceMappingURL=_error.js.map
+=======
+/******/ });
+>>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
