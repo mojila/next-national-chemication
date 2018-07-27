@@ -13,7 +13,9 @@
     "reactstrap": "^6.3.0"
   },
   "scripts": {
+    "dev": "next",
+    "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "npm run build"
   }
 }
