@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/css/bootstrap-grid.min.css"
 import "bootstrap/dist/css/bootstrap-reboot.min.css"
 import "../static/style.css"
-import "react-table/react-table.css"
 
 class MyDocument extends Document {
     render() {
