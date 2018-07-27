@@ -19,8 +19,8 @@ class Print extends React.Component {
             let uid = localStorage.getItem('ceo-uid')
             let code = uid.substr(-5, 5)
 
-            database.ref('pesertaEC/'+uid).child('paper').once('value')
-            .then((snapshot) => this.setState({ loading: false, code, teamName: snapshot.val().teamName }))
+            database.ref('pesertaCEO/'+uid).child('teamName').once('value')
+                .then((snap) => this.setState({ teamName: snap.val(), code, loading: false }))
         }
     }
 

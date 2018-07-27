@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"/index":"bundles/pages/index.js","/_document":"bundles/pages/_document.js","/_app":"bundles/pages/_app.js","/_error":"bundles/pages/_error.js","/":"bundles/pages/index.js"}
-=======
-{"/_document":"bundles/pages/_document.js","/index":"bundles/pages/index.js","/_app":"bundles/pages/_app.js","/_error":"bundles/pages/_error.js","/":"bundles/pages/index.js"}
->>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
+{"/dashboard/ceo/print":"bundles/pages/dashboard/ceo/print.js","/dashboard/ceo":"bundles/pages/dashboard/ceo.js","/_document":"bundles/pages/_document.js","/_app":"bundles/pages/_app.js","/_error":"bundles/pages/_error.js"}

@@ -68,6 +68,14 @@ class Dashboard extends React.Component {
                 <NavigatorDashboard/>
                 { loading && <ReactLoading className="mx-auto pt-5 mt-5" width={ 64 } height={ 64 } type="spin" color="green" /> }
                 { !loading && <Container className="pt-5 mt-4 mt-sm-4 mt-xs-5">
+                { !loading && payed && leaderExist && member1Exist && <Row className="p-3 bg-success shadow rounded mb-1">
+                    <Col>
+                        <div className="text-white small">Selamat, Pendaftaran telah selesai</div>
+                    </Col>
+                    <Col>
+                        <Button size="sm" className="shadow float-right" color="light" onClick={ () => router.push('/dashboard/ceo/print') }>Cetak Bukti</Button>
+                    </Col>
+                </Row> }
                 { (!member1Exist || !leaderExist) && 
                     <Row className="mt-xs-5 p-3 bg-warning shadow rounded mb-1">
                         <Col>
@@ -89,7 +97,7 @@ class Dashboard extends React.Component {
                         </Col>
                         <Col>
                             <div className="d-flex justify-content-end">
-                                <Button size="sm" color="light" className="shadow mr-1">Petunjuk Pembayaran</Button>
+                                <Button size="sm" color="light" className="shadow mr-1" onClick={ () => window.location = 'https://nationalchemication.com/ceo/mekanisme-pendaftaran.html' }>Petunjuk Pembayaran</Button>
                                 <Button size="sm" color="success" className="shadow" onClick={ () => router.push('/dashboard/ceo/payment') }>Konfirmasi Pembayaran</Button>
                             </div>
                         </Col>

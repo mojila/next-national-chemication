@@ -26,6 +26,9 @@ class PaymentCEO extends React.Component {
                 if (payed.val()) {
                     paymentFetch.once('value')
                         .then((payment) => this.setState({ payed: payed.val(), payment: payment.val(), loading: false }))
+                } else {
+                    paymentFetch.once('value')
+                        .then((payment) => this.setState({ payment: payment.val(), loading: false }))
                 }
             })
         }
@@ -63,7 +66,7 @@ class PaymentCEO extends React.Component {
                     { loading && <ReactLoading className="mx-auto pt-5" width={ 64 } height={ 64 } type="spin" color="green" /> }
                     {  !loading && !payment && <Row className="bg-warning p-3 rounded shadow mb-2">
                         <Col>
-                            <p className="p-0 m-0">Silahkan Upload Bukti Transfer Ke Rekening A/N Adaw 3432-4342-34324 (BCA)</p>
+                            <p className="p-0 m-0">Silahkan Upload Bukti Transfer Ke Bank BNI No. Rekening 0710362769 A/N Dyah Wimala Ramaniya </p>
                         </Col>
                     </Row>}
                     { !loading && payment && !payed && <Row className="bg-success p-3 rounded shadow mb-2">

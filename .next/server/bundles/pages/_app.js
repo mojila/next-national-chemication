@@ -67,59 +67,33 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-<<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
-=======
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
->>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 /******/ })
 /************************************************************************/
 /******/ ({
 
-<<<<<<< HEAD
 /***/ "./node_modules/next/dist/pages/_app.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("next/app")
-=======
-/***/ 11:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(12);
->>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./node_modules/next/dist/pages/_app.js");
-=======
-/***/ 12:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(13)
->>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "next/app":
-=======
-/***/ 13:
->>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
 /***/ (function(module, exports) {
 
 module.exports = require("next/app");
 
 /***/ })
 
-<<<<<<< HEAD
 /******/ });
 //# sourceMappingURL=_app.js.map
-=======
-/******/ });
->>>>>>> a86119badc3ac6ec7ff3af7b1d41a60a74b4d891
