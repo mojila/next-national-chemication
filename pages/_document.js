@@ -3,6 +3,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/css/bootstrap-grid.min.css"
 import "bootstrap/dist/css/bootstrap-reboot.min.css"
+import "../static/css/style.css"
 
 class MyDocument extends Document {
     render() {
