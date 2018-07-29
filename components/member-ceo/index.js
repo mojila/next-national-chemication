@@ -15,6 +15,8 @@ class MemberCEO extends React.Component {
     
     componentDidMount() {
         this.mounted = true
+        let { leaderExist, member1Exist, member2Exist } = this.state
+        let { router } = this.props
 
         if (this.mounted) {
             let uid = localStorage.getItem('ceo-uid')
@@ -22,44 +24,22 @@ class MemberCEO extends React.Component {
             this.setState({ loading: true })
 
             database.ref('pesertaCEO/'+uid).child('leaderExist').once('value')
-                .then((leaderExist) => {
-                    database.ref('pesertaCEO/'+uid).child('member1Exist').once('value')
-                        .then((member1Exist) => {
-                            database.ref('pesertaCEO/'+uid).child('member2Exist').once('value')
-                                .then((member2Exist) => {
-                                    this.setState({ leaderExist: leaderExist.val(), member1Exist: member1Exist.val(), member2Exist: member2Exist.val(), loading: false })
-                                })
+            .then((leaderExist) => {
+                database.ref('pesertaCEO/'+uid).child('member1Exist').once('value')
+                .then((member1Exist) => {
+                    database.ref('pesertaCEO/'+uid).child('member2Exist').once('value')
+                    .then((member2Exist) => {
+                        database.ref('pesertaCEO/'+uid).child('payed').once('value')
+                        .then((payed) => {
+                            if (payed.val()) {
+                                router.push('/dashboard/ceo')
+                            } else {
+                                this.setState({ leaderExist: leaderExist.val(), member1Exist: member1Exist.val(), member2Exist: member2Exist.val(), loading: false })
+                            }
                         })
+                    })
                 })
-            // let leaderExistFetch = database.ref('pesertaCEO/' + uid).child('leaderExist')
-            // let member1ExistFetch = database.ref('pesertaCEO/' + uid).child('member1Exist')
-            // let member2ExistFetch = database.ref('pesertaCEO/' + uid).child('member2Exist')
-
-            // this.setState({ loading: true })
-
-            // leaderExistFetch.once('value').then((leaderExist) => {
-            //     if (leaderExist.val()) {
-            //         this.setState({ leaderExist: leaderExist.val() })
-            //     } else {
-            //         this.setState({ leaderExist: false })
-            //     }
-            // })
-
-            // member1ExistFetch.once('value').then((member1Exist) => {
-            //     if (member1Exist.val()) {
-            //         this.setState({ member1Exist: member1Exist.val() })
-            //     } else {
-            //         this.setState({ member1Exist: false })
-            //     }
-            // })
-
-            // member2ExistFetch.once('value').then((member2Exist) => {
-            //     if (member2Exist.val()) {
-            //         this.setState({ member2Exist: member2Exist.val() })
-            //     } else {
-            //         this.setState({ member2Exist: false, loading: false })
-            //     }
-            // })
+            })
         }
     }
 
