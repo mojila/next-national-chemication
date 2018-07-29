@@ -62,6 +62,7 @@ class Dashboard extends React.Component {
     render() {
         let { router } = this.props
         let { loading, teamName, school, payed, leaderExist, member1Exist } = this.state
+        let uid = localStorage.getItem('ceo-uid')
 
         return (
             <div>
@@ -73,7 +74,7 @@ class Dashboard extends React.Component {
                         <div className="text-white small">Selamat, Pendaftaran telah selesai</div>
                     </Col>
                     <Col>
-                        <Button size="sm" className="shadow float-right" color="light" onClick={ () => router.push('/dashboard/ceo/print') }>Cetak Bukti</Button>
+                        <Button size="sm" className="shadow float-right" color="light" onClick={ () => window.location = 'https://nationalchemication.com/dashboard/ceo/print.php?id=' + uid }>Cetak Bukti</Button>
                     </Col>
                 </Row> }
                 { (!member1Exist || !leaderExist) && 
