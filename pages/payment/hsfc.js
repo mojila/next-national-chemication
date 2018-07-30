@@ -1,11 +1,15 @@
 import React from 'react'
+import Head from 'next/head'
+import PaymentHSFC from '../../components/payment-hsfc'
 
-class Payment extends React.Component {
-    render() {
-        return (
-            <div>
-                Under Maintenance
-            </div>
-        )
-    }
-}
+const Payment = () =>
+    <div>
+        <Head>
+            <title>Konfirmasi Pembayaran HSFC</title>
+        </Head>
+        <div>
+            <PaymentHSFC/>
+        </div>
+    </div>
+
+export default Payment
