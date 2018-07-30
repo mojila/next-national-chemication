@@ -1,1 +1,1 @@
-{"/payment/hsfc":"bundles/pages/payment/hsfc.js","/_document":"bundles/pages/_document.js","/_app":"bundles/pages/_app.js","/_error":"bundles/pages/_error.js"}
+{"/payment/hsfc":"bundles/pages/payment/hsfc.js","/index":"bundles/pages/index.js","/register/ec":"bundles/pages/register/ec.js","/_document":"bundles/pages/_document.js","/_app":"bundles/pages/_app.js","/_error":"bundles/pages/_error.js","/":"bundles/pages/index.js"}

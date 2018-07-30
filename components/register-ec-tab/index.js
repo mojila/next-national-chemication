@@ -8,7 +8,7 @@ class Tab extends React.Component {
         return (
             <div>
                 <div className="p-2 bg-white rounded border mb-2">
-                    <div className="d-none small d-flex justify-content-center">
+                    <div className="d-none small d-flex justify-content-between flex-wrap">
                         <div className={ "text-center border p-2 m-1 rounded flex-fill " + (active === 1 ? "bg-primary text-white":"bg-light")}>Info Dasar</div>
                         <div className={ "text-center border p-2 m-1 rounded flex-fill " + (active === 2 ? "bg-primary text-white":"bg-light")}>Dosen Pembimbing</div>
                         <div className={ "text-center border p-2 m-1 rounded flex-fill " + (active === 3 ? "bg-primary text-white":"bg-light")}>Ketua</div>
