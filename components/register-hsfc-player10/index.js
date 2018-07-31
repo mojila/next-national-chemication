@@ -223,6 +223,7 @@ class RegisterHSFCPlayer10 extends React.Component {
                                 { saving && <ReactLoading className="mx-auto" width={24} height={24} type="spin" color="white"/> }
                                 { !saving && "Simpan dan Lanjutkan" }
                                 </Button>
+                                <Button type="reset" size="sm" color="outline-warning" className="float-right mr-2" onClick={() => router.push('/register/hsfc/confirmation')}>Lewati</Button>
                             </Col>
                         </Row>
                     </div>

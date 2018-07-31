@@ -129,10 +129,11 @@ class RegisterHSFCOfficial1 extends React.Component {
                                 <Button type="reset" color="outline-secondary" size="sm" onClick={() => router.push('/register/hsfc')}>Kembali</Button>
                             </Col>
                             <Col md="6" sm="6" xs="6">
-                                <Button disabled={!photo} className="float-right" color="outline-primary" size="sm">
+                                <Button type="submit" disabled={!photo} className="float-right" color="outline-primary" size="sm">
                                 { saving && <ReactLoading className="mx-auto" width={24} height={24} type="spin" color="white"/> }
                                 { !saving && "Simpan dan Lanjutkan" }
                                 </Button>
+                                <Button type="reset" size="sm" color="outline-warning" className="float-right mr-2" onClick={() => router.push('/register/hsfc/official2')}>Lewati</Button>
                             </Col>
                         </Row>
                     </div>
